@@ -39,7 +39,7 @@ def contacts():
             for row in rows:
                 my_list.append(row[0])
 
-        return render_template('template.html',  results=my_list)
+        return render_template('template-contact.html',  results=my_list)
     except Exception as e:
         print(e)
         return []
@@ -56,7 +56,7 @@ def accounts():
             for row in rows:
                 my_list.append(row[0])
 
-        return render_template('template.html',  results=my_list)
+        return render_template('template-Account.html',  results=my_list)
     except Exception as e:
         print(e)
         return []
